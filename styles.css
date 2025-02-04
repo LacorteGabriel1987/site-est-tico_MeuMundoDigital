@@ -1,0 +1,76 @@
+/* Resetando margens e preenchimentos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+}
+
+/* Estilo para o cabeçalho */
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Estilo para o conteúdo principal */
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Duas colunas (1 menor, 1 maior) */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilo para a coluna esquerda */
+.left-column {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a coluna direita */
+.right-column {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a lista de projetos */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project {
+  background-color: #eee;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Efeito ao passar o mouse nos projetos */
+.project:hover {
+  background-color: #ddd;
+}
+
+/* Estilo para o rodapé */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}

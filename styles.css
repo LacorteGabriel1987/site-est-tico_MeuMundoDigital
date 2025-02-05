@@ -64,6 +64,13 @@ main {
   background-color: #ddd;
 }
 
+.description {
+  display: none; /*oculta a descrição*/
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+
 /* Estilo para o rodapé */
 footer {
   text-align: center;

@@ -81,3 +81,42 @@ footer {
   width: 100%;
   bottom: 0;
 }
+
+/*Botão para estilizar página*/
+#toggle-theme {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#toggle-theme:hover {
+  background-color: #666;
+}
+
+/* Modo escuro */
+.dark-mode {
+  background-color: #222;
+  color: white;
+}
+
+.dark-mode header {
+  background-color: #111;
+}
+
+.dark-mode .left-column,
+.dark-mode .right-column {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode .project {
+  background-color: #444;
+}
+
+.dark-mode .project:hover {
+  background-color: #555;
+}

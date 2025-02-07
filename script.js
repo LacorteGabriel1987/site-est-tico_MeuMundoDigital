@@ -8,3 +8,19 @@ function toggleDescription(id) {
     desc.style.display = "none"; // Oculta
   }
 }
+
+document.getElementById("toggle-theme").addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+
+  //Salvar preferência no navegador
+
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+});
+// Verificar se o usuário já tinha escolhido um tema antes
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-mode");
+}
